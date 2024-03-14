@@ -1,0 +1,86 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AccountTab > should match snapshot 1`] = `
+<div
+  class="rounded-lg border bg-card text-card-foreground shadow-sm"
+>
+  <div
+    class="flex flex-col space-y-1.5 p-6"
+  >
+    <h3
+      class="text-2xl font-semibold leading-none tracking-tight"
+    >
+      Account
+    </h3>
+    <p
+      class="text-sm text-muted-foreground"
+    >
+      Make changes to your account here. Click submit when you are done.
+    </p>
+  </div>
+  <div
+    class="p-6 pt-0 space-y-2"
+  >
+    <form
+      class="space-y-8"
+    >
+      <div
+        class="space-y-2"
+      >
+        <label
+          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          for=":r0:-form-item"
+        >
+          Name
+        </label>
+        <input
+          aria-describedby=":r0:-form-item-description"
+          aria-invalid="false"
+          class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+          id=":r0:-form-item"
+          name="name"
+          placeholder="name"
+          value="Cianca"
+        />
+        <p
+          class="text-sm text-muted-foreground"
+          id=":r0:-form-item-description"
+        >
+          This is your public display name.
+        </p>
+      </div>
+      <div
+        class="space-y-2"
+      >
+        <label
+          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          for=":r1:-form-item"
+        >
+          Username
+        </label>
+        <input
+          aria-describedby=":r1:-form-item-description"
+          aria-invalid="false"
+          class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+          id=":r1:-form-item"
+          name="username"
+          placeholder="username"
+          value="dinos1337"
+        />
+        <p
+          class="text-sm text-muted-foreground"
+          id=":r1:-form-item-description"
+        >
+          This will be used for logging in.
+        </p>
+      </div>
+      <button
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+`;

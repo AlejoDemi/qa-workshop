@@ -1,0 +1,91 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Posts > should match snapshot when data is available 1`] = `
+<div>
+  <div
+    class="flex flex-col items-center gap-2"
+  >
+    <a
+      class="flex items-center gap-3 hocus:bg-indigo-500 p-2 rounded-md"
+      href="/1"
+    >
+      <svg
+        class="lucide lucide-scroll-text "
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 21h12a2 2 0 0 0 2-2v-2H10v2a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v3h4"
+        />
+        <path
+          d="M19 17V5a2 2 0 0 0-2-2H4"
+        />
+        <path
+          d="M15 8h-5"
+        />
+        <path
+          d="M15 12h-5"
+        />
+      </svg>
+      <span>
+        sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+      </span>
+    </a>
+    <a
+      class="flex items-center gap-3 hocus:bg-indigo-500 p-2 rounded-md"
+      href="/2"
+    >
+      <svg
+        class="lucide lucide-scroll-text "
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 21h12a2 2 0 0 0 2-2v-2H10v2a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v3h4"
+        />
+        <path
+          d="M19 17V5a2 2 0 0 0-2-2H4"
+        />
+        <path
+          d="M15 8h-5"
+        />
+        <path
+          d="M15 12h-5"
+        />
+      </svg>
+      <span>
+        qui est esse
+      </span>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Posts > should match snapshot when loading 1`] = `
+<div>
+  Loading...
+</div>
+`;
+
+exports[`Posts > should match snapshot when there is an error 1`] = `
+<div>
+  <span>
+    Error: 
+    An error occurred!
+  </span>
+</div>
+`;
