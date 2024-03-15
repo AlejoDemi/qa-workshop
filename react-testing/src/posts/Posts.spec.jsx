@@ -13,13 +13,13 @@ vi.mock('./hooks/usePosts', () => ({
 }))
 
 // Remove this and see the difference in a snapshot (it's far more readable this way)
-// vi.mock('lucide-react', async (importOriginal) => {
-// 	const mod = await importOriginal()
-// 	return {
-// 		...mod,
-// 		ScrollTextIcon: (props) => <div {...props}>ScrollTextIcon</div>,
-// 	}
-// })
+vi.mock('lucide-react', async (importOriginal) => {
+	const mod = await importOriginal()
+	return {
+		...mod,
+		ScrollTextIcon: (props) => <div {...props}>ScrollTextIcon</div>,
+	}
+})
 
 describe('Posts', () => {
 	test('should match snapshot when there is an error', () => {
