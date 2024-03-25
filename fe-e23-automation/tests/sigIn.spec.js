@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const { POManager } = require('../page-objects/POManager');
-const dataset = JSON.parse(JSON.stringify(require("../test-data/testData.json")));
+const dataset = JSON.parse(JSON.stringify(require("../test-data/testdata.json")));
 
 let poManager;
 let topNav;
@@ -33,5 +33,24 @@ test('Log-in with valid username and password.', async () => {
     });
     await test.step('User must successfully login to the web page', async () => {
         await myAccount.verUsername(dataset.user1.username);
+    });
+});
+
+test('Log-in with invalid username and password.', async () => {
+    await test.step(' Click on My Account Menu', async () => {
+        await topNav.clickMyAccountButton();
+        await myAccount.verLoginheader();
+    })
+    await test.step('Enter registered username in username textbox', async () => {
+        await myAccount.fillUserName(dataset.user1.username);
+    });
+    await test.step('Enter password in password textbox', async () => {
+        await myAccount.fillPassInput("wrongPassword");
+    });
+    await test.step('Click on login button', async () => {
+        await myAccount.clickLoginButton();
+    });
+    await test.step('Error banner must appear', async () => {
+        await myAccount.isErrorVisisble()
     });
 });

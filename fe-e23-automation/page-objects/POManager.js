@@ -1,5 +1,7 @@
 const { TopNav } = require('./topNav');
 const { MyAccount } = require('./myAccount');
+const { Home } = require('./home');
+const { Shop } = require('./shop');
 
 class POManager
 {
@@ -8,6 +10,8 @@ class POManager
         this.page = page;
         this.topNav = new TopNav(this.page);
         this.myAccount = new MyAccount(this.page);
+        this.home = new Home(this.page);
+        this.shop = new Shop(this.page);
     }
 
 
@@ -19,6 +23,14 @@ class POManager
     getMyAccount()
     {
         return this.myAccount;
+    }
+
+    getHome() {
+        return this.home;
+    }
+
+    getShop() {
+        return this.shop;
     }
    
 }

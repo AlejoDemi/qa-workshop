@@ -9,6 +9,12 @@
     {
         "username":"testdemo4",
         "password":"Sirius2023."
+    },
+
+    "newUser":
+    {
+        "email":"testdemo5@mail.com",
+        "password":"Sirius2023."
     }
 
 }
